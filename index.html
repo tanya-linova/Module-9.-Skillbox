@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Игра "Угадай пару"</title>
+  <script defer src="./cards-game.js"></script>
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+
+body, .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6, .f-header, .f-text, .block-set, input, button, select, textarea, p {
+   font-family: 'Nunito', sans-serif;
+}
+
+  body{
+    background-color: #222222;
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+
+  .header {
+  color:white;
+  margin: 0;
+  margin-bottom: 80px;
+  font-size: 42px;
+  font-weight: 700;
+  }
+
+.error-text {
+  width: 100%;
+  text-align: center;
+  color:rgb(255, 255, 255);
+  margin: 0;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.game-input {
+  max-width: 60px;
+  height: 40px;
+  border-radius: 16px;
+  font-size: 26px;
+  font-weight: 700;
+  margin-right: 10px;
+  border: none;
+  padding: 0;
+  text-align: center;
+}
+  .invise{
+    display: none;
+}
+
+.input-btn {
+  margin-top: -1px;
+  font-size: 18px;
+  font-weight: 700px;
+  padding: 8px 20px;
+  background-color: #222222;
+  color:rgb(94, 255, 0);
+  border: 1px solid rgb(94, 255, 0);
+  border-radius: 16px;
+}
+
+
+.cards-group{
+    width: 100%;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+  }
+
+  .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 120px;
+    background-color: rgb(141, 0, 181);
+    border-radius: 9px;
+    font-size: 64px;
+    font-weight: 700;
+    color: transparent;
+    cursor: pointer;
+  }
+
+  .card:hover {
+    opacity: 0.5;
+  }
+
+  .card-open {
+    background-color: rgb(154, 226, 255);
+    color: #222222;
+    transform: perspective(50px) rotateY(360deg);
+  }
+
+  .card-success {
+    background-color: rgb(94, 255, 0);
+    color: #222222;
+  }
+
+  .restart-btn {
+    font-size: 18px;
+    font-weight: 700px;
+    padding: 10px 20px;
+    background-color:  #222222;
+    color:rgb(94, 255, 0);
+    border: 1px solid rgb(94, 255, 0);
+    border-radius: 16px;
+    margin: 10px;
+    opacity: 0;
+  }
+
+  .btn-visible {
+  opacity: 1;
+  }
+
+
+</style>
+<body>
+
+  <div class="container">
+
+  </div>
+</body>
+</html>
